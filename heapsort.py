@@ -17,12 +17,15 @@ def maxHeapify(array, index, heapsize):
 
 # range(start, stop, step)
 def heapSort(array, heapsize):
-    for i in range(heapsize / 2 - 1, -1, -1):
+    for i in range(heapsize // 2 - 1, -1, -1):
         maxHeapify(array, i, heapsize)
 
-    for i in range(heapsize, -1, -1):
+    for i in range(heapsize-1, 0, -1):
         array[0], array[i] = array[i], array[0]
         maxHeapify(array, 0, i)
     
+array = [10,8,6,2,3,5,4,1,7,9]
 
-    
+print(array)
+heapSort(array, len(array))
+print(array)
