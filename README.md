@@ -1,2 +1,2 @@
 # Repository for python 
-- heapsort algorithm (in progress)
+- heapsort algorithm (DONE)
